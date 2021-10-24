@@ -43,46 +43,6 @@ menuModal.addEventListener('click',(e)=>{
     // get empty warning element
     var warning= document.getElementsByClassName('warning')[0];
 
-/* //get api data element
-    var RapidApiUrl='https://url-shortener-service.p.rapidapi.com/shorten';
-    const RapidApiHeaders={
-
-        'content-type': 'application/x-www-form-urlencoded',
-        'x-rapidapi-host': 'url-shortener-service.p.rapidapi.com',
-        'x-rapidapi-key': '38bbe4229dmsh9e5a4a954284e26p118ab1jsn204de650941d'
-    };
-
-
-    const options = {
-        method: 'POST',
-        url: 'https://url-shortener-service.p.rapidapi.com/shorten',
-        headers: {
-          'content-type': 'application/x-www-form-urlencoded',
-          'x-rapidapi-host': 'url-shortener-service.p.rapidapi.com',
-          'x-rapidapi-key': '38bbe4229dmsh9e5a4a954284e26p118ab1jsn204de650941d'
-        },
-        data: {
-          url: 'https://medium.com/codingthesmartway-com-blog/getting-started-with-axios-166cb0035237'
-        }
-    };
-       /*const option={
-                method:"POST",
-                URL:'https://url-shortener-service.p.rapidapi.com/shorten',
-                data:{URL:formattedData},
-                Headers:{
-                    'content-type': 'application/x-www-form-urlencoded',
-                    'x-rapidapi-host': 'url-shortener-service.p.rapidapi.com',
-                    'x-rapidapi-key': '38bbe4229dmsh9e5a4a954284e26p118ab1jsn204de650941d'
-                    }
-            };
-
-            axios.request(option)
-                .then(Response =>{
-                    console.log(Response);
-                })
-                .catch(error=>console.error("error"))
-*/
-
     var i=0; //compteur
     
     //listen event to short url
