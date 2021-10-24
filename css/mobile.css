@@ -1,0 +1,664 @@
+/*start nav bar*/
+nav{
+    display: grid;
+    position: relative;
+}
+.logo{
+    width: 60%;
+    height: 2rem;
+    background-image: url('../images/logo.svg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 55%;
+    margin: 1rem;
+}
+nav svg{
+    justify-self: right;
+    align-self:start;
+    margin: .7rem;
+    position: absolute;
+    top: 19%;
+}
+.menuModal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.menu{
+    display: grid;
+    width: 90%;
+    transform: translate(5%,0%);
+    margin-top: 4rem;
+    height: 15rem;
+    background-color: var(--DarkViolet);
+    z-index:1;
+    border-radius: .5rem;
+}
+.menu .ul1{
+    margin-top: 2rem;
+    justify-self: center;
+    align-self: start;
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    align-content: space-between;
+    grid-row-gap: .5rem;
+    margin-bottom: 1rem;
+}
+.ul1 li{
+    list-style: none;
+    justify-self: center;
+}
+.ul1 a{
+    font-family: "poppinsBold";
+}
+.menu .connexion{
+    justify-self: center;
+    align-self: start;
+    width: 90%;
+    border-top:1px solid hsl(258, 11%, 37%) ;
+}
+.connexion .ul2{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-row-gap: 1rem;
+}
+.Login{
+    margin-top: 1rem;
+    justify-self: center;
+    list-style: none;
+    font-family: "poppinsBold";
+}
+.SignUp{
+    justify-self: center;
+    list-style: none;
+    font-family: "poppinsBold";
+    border-radius:1rem;
+    background-color: var(--Cyan);
+    padding-top: .4rem;
+    text-align: center;
+    width: 100%;
+    height: 2.3rem;
+    justify-self: center;
+    margin-top: 0 !important;
+    margin: 1rem;
+}
+.menu a{
+    color: white;
+}
+/*start aside*/
+aside{
+    display: grid;
+}
+aside .workimage{
+    width: 100%;
+    height: 15rem;
+    background-image: url('../images/illustration-working.svg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size:cover;
+}
+
+aside h1{
+    margin: 1rem;
+    margin-bottom: 0 !important;
+    font-size: 2rem;
+    text-align: center;
+}
+aside p{
+    margin: 1rem;
+    margin-top: 0 !important;
+    font-size:95%;
+    text-align: center;
+}
+aside a{
+    border-radius:1rem;
+    background-color: var(--Cyan);
+    color: white;
+    padding-top: .4rem;
+    text-align: center;
+    width: 50%;
+    height: 2.3rem;
+    justify-self: center;
+    margin-top: 0 !important;
+    margin: 1rem;
+    font-family: "poppinsBold";
+}
+/*aside end*/
+
+/*start short box*/
+.shortBox{
+    display: grid;
+    margin: 2rem;
+}
+.containBox{
+    position: relative;
+    justify-self: center;
+    width: 100%;
+    height: 7rem;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: 50%;
+    grid-row-gap: .5rem;
+    background-image: url('../images/bg-shorten-mobile.svg');
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size: 87%;
+    background-color: var(--DarkViolet);
+}
+.containBox input{
+    position: absolute;
+    top: 20%;
+    border: none;
+    border-radius: .3rem;
+    padding-left: .5rem;
+    align-self: end;
+    width: 90%;
+    height: 1.8rem;
+    justify-self: center;
+}
+.containBox button{
+    position: absolute;
+    bottom: 2%;
+    border: none;
+    background-color: var(--Cyan);
+    border-radius: .3rem;
+    align-self: start;
+    width: 90%;
+    height: 1.8rem;
+    justify-self: center;
+    color: white;
+    font-family: "poppinsBold";
+    margin-bottom: .5rem;
+}
+.poswarning{
+    font-size: 70%;
+    margin-left: .9rem;
+    color:var(--Red);
+    position: absolute;
+    top: 45%;
+}
+/*shortBox end*/
+
+/*mycontaint start*/
+.containt{
+    background-color:hsl(270, 27%, 96%);
+    display: grid;
+}
+.myContaint{
+    background-color:hsl(270, 27%, 96%);
+    display: grid;
+}
+.myContaint .containtT {
+    font-family: "poppinsBold";
+    font-size:1.3rem;
+    text-align: center;
+    margin: .5rem;
+}
+.myContaint .containtP{
+    margin: .5rem;
+    text-align: center;
+    font-size: .85rem;
+}
+
+/*brand box startx*/
+.BrandRecognition{
+    margin-top: 2rem;
+    border-radius: .4rem;
+    background-color: white;
+    width: 90%;
+    justify-self: center;
+    position: relative;
+    display: grid;
+}
+.BrandRecognition h1{
+    margin-top: 2rem;
+    font-family: "poppinsBold";
+    font-size: 1rem;
+    text-align: center;
+}
+.BrandRecognition p{
+    text-align: center;
+    margin: .5rem;
+    font-size: .8rem;
+    margin-bottom: 1rem !important;
+}
+.BrandImage{
+    background-color: var(--DarkViolet);
+    width: 20%;
+    height: 3.5rem;
+    border-radius: 10rem;
+    background-image: url('../images/icon-brand-recognition.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: absolute;
+    top: -2rem;
+    justify-self: center;
+
+}
+
+/*Detailed records start*/
+.DetailedRecords{
+    margin-top:2rem;
+    border-radius: .4rem;
+    background-color: white;
+    width: 90%;
+    justify-self: center;
+    position: relative;
+    display: grid;
+}
+.DetailedRecords h1{
+    margin-top: 2rem;
+    font-family: "poppinsBold";
+    font-size: 1rem;
+    text-align: center;
+}
+.DetailedRecords p{
+    text-align: center;
+    margin: .5rem;
+    font-size: .8rem;
+    margin-bottom: 1rem !important;
+}
+.DetailedImage{
+    background-color: var(--DarkViolet);
+    width: 20%;
+    height: 3.5rem;
+    border-radius: 10rem;
+    background-image: url('../images/icon-detailed-records.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: absolute;
+    top: -2rem;
+    justify-self: center;
+
+}
+
+/*Fully customizable start*/
+.FullyCustomizable{
+    margin-top: 2rem;
+    margin-bottom:3rem;
+    border-radius: .4rem;
+    background-color: white;
+    width: 90%;
+    justify-self: center;
+    position: relative;
+    display: grid;
+}
+.FullyCustomizable h1{
+    margin-top: 2rem;
+    font-family: "poppinsBold";
+    font-size: 1rem;
+    text-align: center;
+}
+.FullyCustomizable p{
+    text-align: center;
+    margin: .5rem;
+    font-size: .8rem;
+    margin-bottom: 1rem !important;
+}
+.FullyImage{
+    background-color: var(--DarkViolet);
+    width: 20%;
+    height: 3.5rem;
+    border-radius: 15rem;
+    background-image: url('../images/icon-fully-customizable.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: absolute;
+    top: -2rem;
+    justify-self: center;
+
+}
+.borderlink1{
+    justify-self: center;
+    background-color: var(--Cyan);
+    width: 5px;
+    height: 2rem;
+    z-index: 1;
+}
+.borderlink2{
+    justify-self: center;
+    background-color: var(--Cyan);
+    width: 5px;
+    height: 2rem;
+    z-index: 1;
+}
+/* copy element start*/
+.btnCopy1{
+    height: 7rem;
+    width: 90%;
+    justify-self: center;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+.links1{
+    padding-left:.5rem;
+    font-size: 70%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid hsl(0, 15%, 92%);
+}
+.shortlinks1{
+    padding-left:.5rem;
+    font-size: 70%;
+    margin-bottom: .5rem;
+    color: var(--Cyan);
+}
+.copy1{
+    width: 92%;
+    height: 2rem;
+    color: white;
+    background-color: var(--Cyan);
+    padding-left: .5rem;
+    border-radius: .3rem;
+    margin-left: .5rem;
+    border: none;
+    transform: translate(0%,30%);
+    font-family: "poppinsBold";
+}
+
+.btnCopy2{
+    height: 7rem;
+    width: 90%;
+    justify-self: center;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+.links2{
+    padding-left:.5rem;
+    font-size: 70%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid hsl(0, 15%, 92%);
+}
+.shortlinks2{
+    padding-left:.5rem;
+    font-size: 70%;
+    margin-bottom: .5rem;
+    color: var(--Cyan);
+}
+.copy2{
+    width: 92%;
+    height: 2rem;
+    color: white;
+    background-color: var(--Cyan);
+    padding-left: .5rem;
+    border-radius: .3rem;
+    margin-left: .5rem;
+    border: none;
+    transform: translate(0%,30%);
+    font-family: "poppinsBold";
+}
+
+.btnCopy3{
+    height: 7rem;
+    width: 90%;
+    justify-self: center;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+}
+.links3{
+    padding-left:.5rem;
+    font-size: 70%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid hsl(0, 15%, 92%);
+}
+.shortlinks3{
+    padding-left:.5rem;
+    font-size: 70%;
+    margin-bottom: .5rem;
+    color: var(--Cyan);
+}
+.copy3{
+    width: 92%;
+    height: 2rem;
+    color: white;
+    background-color: var(--Cyan);
+    padding-left: .5rem;
+    border-radius: .3rem;
+    margin-left: .5rem;
+    border: none;
+    transform: translate(0%,30%);
+    font-family: "poppinsBold";
+}
+.copy1:focus,.copy2:focus,.copy3:focus{
+    background-color: var(--DarkViolet);
+}
+.btnCopy1{
+    display: none;
+}
+.btnCopy2{
+    display: none;
+}
+.btnCopy3{
+    display: none;
+}
+/*my containt end*/
+
+/*boost section start*/
+.boostSection{
+    display: grid;
+    height: 10rem;
+    background-color: var(--DarkViolet);
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 80%;
+}
+.boostSection h1{
+    color: white;
+    align-self: end;
+    justify-self: center;
+    font-family: "poppinsBold";
+    text-align: center;
+    font-size: 1.2rem;
+}
+.boostSection a{
+    border-radius:1.3rem;
+    font-family: "poppinsBold";
+    justify-self: center;
+    margin-top: 1rem;
+    height:2.5rem ;
+    padding: .5rem;
+    text-align: center;
+    width: 50%;
+    background-color: var(--Cyan);
+    color: white;
+}
+/*boost section end*/
+
+/*footer start*/
+
+footer{
+    display: grid;
+    justify-items:center;
+    background-color: var(--VeryDarkViolet);
+}
+.flogo{
+    margin-top: 1rem;
+    height: 2rem;
+    width: 80%;
+    background-image: url('../images/flogo.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 40%;
+}
+
+/*Features start*/
+.Features{
+    display: grid;
+}
+.Features p{
+    color: white;
+    font-family: "poppinsBold";
+    justify-self: center;
+    font-size: .8rem;
+}
+.Features ul{
+    display: grid;
+}
+.Features li{
+    font-size: .6rem;
+    justify-self: center;
+    list-style: none;
+    margin: .3rem;
+}
+.Features a{
+    color: var(--Gray);
+}
+
+/*Resources start*/
+.Resources{
+    display: grid;
+}
+.Resources p{
+    color: white;
+    font-family: "poppinsBold";
+    justify-self: center;
+    font-size: .8rem;
+}
+.Resources ul{
+    display: grid;
+}
+.Resources li{
+    font-size: .6rem;
+    justify-self: center;
+    list-style: none;
+    margin: .3rem;
+}
+.Resources a{
+    color: var(--Gray);
+}
+
+/*compagny start*/
+.Company{
+    display: grid;
+}
+.Company p{
+    color: white;
+    font-family: "poppinsBold";
+    justify-self: center;
+    font-size: .8rem;
+}
+.Company ul{
+    display: grid;
+}
+.Company li{
+    font-size: .6rem;
+    justify-self: center;
+    list-style: none;
+    margin: .3rem;
+}
+.Company a{
+    color: var(--Gray);
+}
+
+/*social image start*/
+.socialIcon{
+    margin-top: 1rem;
+    justify-self: center;
+    width: 60%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    transform: translate(7%,0%);
+}
+.facebook{
+    height: 100%;
+    background-image: url('../images/icon-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.twitter{
+    height: 100%;
+    background-image: url('../images/icon-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.pinterest{
+    height: 100%;
+    background-image: url('../images/icon-pinterest.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.instagram{
+    height: 100%;
+    background-image: url('../images/icon-instagram.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+/*footer end*/
+
+@media screen and (min-width:321px) {
+    .FullyImage{
+        width: 17%;
+    }
+    .DetailedImage{
+        width: 17%;
+    }
+    .BrandImage{
+        width: 17%;
+    }
+}
+@media screen and (min-width:200px) and (max-width:300px) {
+    .FullyImage{
+        width: 29%;
+    }
+    .DetailedImage{
+        width: 29%;
+    }
+    .BrandImage{
+        width: 29%;
+    }
+}
+@media screen and (min-width:248px) and (max-width:300px) {
+    .FullyImage{
+        width: 25%;
+    }
+    .DetailedImage{
+        width: 25%;
+    }
+    .BrandImage{
+        width: 25%;
+    }
+}
+@media screen and (min-width:150px) and (max-width:248px) {
+    .FullyImage{
+        width: 37%;
+    }
+    .DetailedImage{
+        width: 37%;
+    }
+    .BrandImage{
+        width: 37%;
+    }
+}
+@media screen and (min-width:150px) and (max-width:210px) {
+    .boostSection a{
+        font-size: .6rem;
+        padding-top: .8rem;
+    }
+    aside a{
+        font-size: .6rem;
+        padding-top: .8rem;
+    }
+}
+@media screen and (min-width:211px) and (max-width:218px) {
+    .boostSection a{
+        font-size: .8rem;
+        padding-top: .8rem;
+    }
+}

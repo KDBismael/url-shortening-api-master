@@ -1,0 +1,791 @@
+/*navbar stated*/
+nav{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    position: relative;
+}
+.logo{
+    width: 75%;
+    height: 2.5rem;
+    background-image: url('../images/logo.svg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 65%;
+    margin-left: 4rem;
+    margin-top: 2rem;   
+}
+.menu{
+    display: grid;
+}
+.menu .ul1{
+    justify-self: start;
+    align-self: start;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-column-gap: 1.5rem;
+    margin-top:2.5rem;
+    position: relative;
+}
+.menu li{
+    list-style: none;
+    font-family: "poppinsBold";
+}
+.ul1 a{
+    color: var(--Gray);
+}
+.ul2 a{
+    color: var(--Gray);
+}
+.menu .connexion{
+    justify-self: end;
+    margin-right: 3rem;
+    position: absolute;
+}
+.menu .ul2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 1rem;
+    margin-top: 2.5rem;
+}
+.Login{
+    align-self: center;
+    padding-bottom:1rem ;
+}
+.SignUp{
+    border-radius:1rem;
+    background-color: var(--Cyan);
+    padding-top: .4rem;
+    text-align: center;
+    width: 100%;
+    height: 2.3rem;
+    justify-self: center;
+    margin-top: 0 !important;
+    margin: 1rem;
+    font-family: "poppinsBold";
+}
+.SignUp a{
+    color: white ;
+}
+nav svg{
+    display: none;
+}
+/*navbar end*/
+
+/*aside start*/
+aside{
+    display: grid;
+    position: relative;
+}
+.workimage{
+    justify-self: end;
+    width: 40%;
+    height: 20rem;
+    background-image: url('../images/illustration-working.svg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size:contain;
+}
+aside p{
+    justify-self: start;
+    position: absolute;
+    top: 50%;
+    margin-left: 4rem;
+    width: 40%;
+    margin-top: .5rem;
+}
+aside h1{
+    justify-self: start;
+    position: absolute;
+    top: 10%;
+    font-size: 3rem;
+    font-family: "poppinsBold";
+    margin-left: 4rem;
+    width: 40%;
+}
+aside a{
+    position: absolute;
+    top: 75%;
+    margin-left: 4rem;
+    border-radius:1rem;
+    background-color: var(--Cyan);
+    color: white;
+    padding-top: .4rem;
+    text-align: center;
+    width: 15%;
+    height: 2.3rem;
+    justify-self: start;
+    font-family: "poppinsBold";
+}
+/*aside end*/
+
+/*short conatiner start*/
+.shortBox{
+    display: grid;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+.containBox{
+    justify-self: center;
+    width: 100%;
+    height: 6rem;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: 50%;
+    grid-row-gap: .5rem;
+    background-image: url('../images/bg-shorten-desktop.svg');
+    background-repeat:no-repeat;
+    background-position:right;
+    background-size: 87%;
+    background-color: var(--DarkViolet);
+    position: relative;
+}
+.containBox input{
+    border: none;
+    border-radius: .3rem;
+    padding-left: .5rem;
+    margin-top: 1.9rem;
+    margin-left: 3rem;
+    width: 60%;
+    height: 2.5rem;
+    justify-self: start;
+}
+.containBox button{
+    border: none;
+    background-color: var(--Cyan);
+    border-radius: .3rem;
+    width: 20%;
+    height: 2.5rem;
+    justify-self:end;
+    color: white;
+    font-family: "poppinsBold";
+    margin-right: 4rem;
+    position: absolute;
+    top: 32%;
+}
+.empty{
+    border: 2px solid var(--Red);
+    color: var(--Red);
+}
+.poswarning{
+    color:var(--Red);
+    font-size: 70%;
+    margin-left: 3rem;
+    margin-top: 1.2rem;
+}
+/*shortBox end*/
+
+/*mycontaint start*/
+.containt{
+    background-color:hsl(270, 27%, 96%);
+    display: grid;
+}
+.myContaint{
+    background-color:hsl(270, 27%, 96%);
+    display: grid;
+    position: relative;
+    height: 592px;
+}
+.myContaint .containtT {
+    font-family: "poppinsBold";
+    font-size:2rem;
+    text-align: center;
+    margin: .5rem;
+    margin-top: 3rem;
+}
+.myContaint .containtP{
+    margin: .5rem;
+    text-align: center;
+    justify-self: center;
+    font-size: 1rem;
+    width: 50%;
+    color: var(--GrayishViolet);
+}
+
+/*brand box startx*/
+.BrandRecognition{
+    margin-top: 2rem;
+    border-radius: .4rem;
+    background-color: white;
+    width: 27%;
+    height: 12rem;
+    justify-self:start;
+    text-align: left;
+    position: relative;
+    display: grid;
+    margin-left: 5rem;
+    z-index: 1;
+}
+.BrandRecognition h1{
+    margin-top: 2rem;
+    font-family: "poppinsBold";
+    font-size: 1rem;
+    text-align: center;
+}
+.BrandRecognition p{
+    text-align: center;
+    margin: .5rem;
+    font-size: .8rem;
+    margin-bottom: 1rem !important;
+    color: var(--Gray);
+}
+.BrandImage{
+    background-color: var(--DarkViolet);
+    width: 20%;
+    height: 3.5rem;
+    border-radius: 10rem;
+    background-image: url('../images/icon-brand-recognition.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: absolute;
+    top: -2rem;
+    justify-self:start;
+    margin-left: 2rem;
+
+}
+.borderlink1{
+    background-color: var(--Cyan);
+    width:2rem;
+    height: 5px;
+    z-index:0;
+    position: absolute;
+    top: 53%;
+    margin-left: 34%;
+}
+/*Detailed records start*/
+.DetailedRecords{
+    margin-top:2rem;
+    border-radius: .4rem;
+    background-color: white;
+    width: 27%;
+    height: 12rem;
+    justify-self: center;
+    align-self: start;
+    position: relative;
+    display: grid;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+}
+.DetailedRecords h1{
+    margin-top: 2rem;
+    font-family: "poppinsBold";
+    font-size: 1rem;
+    text-align: center;
+}
+.DetailedRecords p{
+    text-align: center;
+    margin: .5rem;
+    font-size: .8rem;
+    margin-bottom: 1rem !important;
+    color: var(--Gray);
+}
+.DetailedImage{
+    background-color: var(--DarkViolet);
+    width: 20%;
+    height: 3.5rem;
+    border-radius: 10rem;
+    background-image: url('../images/icon-detailed-records.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: absolute;
+    top: -2rem;
+    justify-self:start;
+    margin-left: 2rem;
+
+}
+.borderlink2{
+    background-color: var(--Cyan);
+    width:2rem;
+    height: 5px;
+    z-index:0;
+    position: absolute;
+    top: 66%;
+    justify-self: end;
+    margin-right: 34%;
+}
+
+/*Fully customizable start*/
+.FullyCustomizable{
+    margin-top: 2rem;
+    margin-bottom:3rem;
+    border-radius: .4rem;
+    background-color: white;
+    width:27%;
+    height: 12rem;
+    justify-self:end;
+    position: relative;
+    display: grid;
+    margin-right: 5rem;
+    margin-bottom: 10rem;
+    bottom: 20%;
+}
+.FullyCustomizable h1{
+    margin-top: 2rem;
+    font-family: "poppinsBold";
+    font-size: 1rem;
+    text-align: center;
+}
+.FullyCustomizable p{
+    text-align: center;
+    margin: .5rem;
+    font-size: .8rem;
+    margin-bottom: 1rem !important;
+    color: var(--Gray);
+}
+.FullyImage{
+    background-color: var(--DarkViolet);
+    width: 20%;
+    height: 3.5rem;
+    border-radius: 15rem;
+    background-image: url('../images/icon-fully-customizable.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    position: absolute;
+    top: -2rem;
+    justify-self:start;
+    margin-left: 2rem;
+}
+
+
+.btnCopy1{
+    height: 4rem;
+    width: 85%;
+    justify-self: center;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    position: relative;
+}
+.links1{
+    padding-left:1rem;
+    padding-top: .6rem;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    display: inline-block;
+}
+.shortlinks1{
+    padding-left:1rem;
+    font-size: 1.3rem;
+    color: var(--Cyan);
+    display: inline-block;
+    margin-left: 27rem;
+    margin-right: 1rem;
+}
+.copy1{
+    width: 15%;
+    height: 2rem;
+    color: white;
+    background-color: var(--Cyan);
+    margin-left: 1rem;
+    border-radius: .3rem;
+    margin-left: .5rem;
+    border: none;
+    margin-top: 1rem;
+    font-family: "poppinsBold";
+    position: absolute;
+    right: 1rem;
+}
+.btnCopy2{
+    height: 4rem;
+    width: 85%;
+    justify-self: center;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    position: relative;
+}
+.links2{
+    padding-left:1rem;
+    padding-top: .6rem;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    display: inline-block;
+}
+.shortlinks2{
+    padding-left:1rem;
+    font-size: 1.3rem;
+    color: var(--Cyan);
+    display: inline-block;
+    margin-left: 27rem;
+    margin-right: 1rem;
+}
+.copy2{
+    width: 15%;
+    height: 2rem;
+    color: white;
+    background-color: var(--Cyan);
+    margin-left: 1rem;
+    border-radius: .3rem;
+    margin-left: .5rem;
+    border: none;
+    margin-top: 1rem;
+    font-family: "poppinsBold";
+    position: absolute;
+    right: 1rem;
+}
+.btnCopy3{
+    height: 4rem;
+    width: 85%;
+    justify-self: center;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    position: relative;
+}
+.links3{
+    padding-left:1rem;
+    padding-top: .6rem;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    display: inline-block;
+}
+.shortlinks3{
+    padding-left:1rem;
+    font-size: 1.3rem;
+    color: var(--Cyan);
+    display: inline-block;
+    margin-left: 27rem;
+    margin-right: 1rem;
+}
+.copy3{
+    width: 15%;
+    height: 2rem;
+    color: white;
+    background-color: var(--Cyan);
+    margin-left: 1rem;
+    border-radius: .3rem;
+    margin-left: .5rem;
+    border: none;
+    margin-top: 1rem;
+    font-family: "poppinsBold";
+    position: absolute;
+    right: 1rem;
+}
+.copy1:hover,.copy2:hover,.copy3:hover{
+    background-color: hsl(180, 79%, 74%);
+    cursor: pointer;
+}
+.copy1:focus,.copy2:focus,.copy3:focus{
+    background-color:var(--DarkViolet);
+    cursor: pointer;
+}
+.btnCopy1{
+    display: none;
+}
+.btnCopy2{
+    display: none;
+}
+.btnCopy3{
+    display: none;
+}
+/*
+pour afficher les copy il faut augmenté la taille du mycontaint
+*/
+/*my containt end*/
+
+/*boost section start*/
+.boostSection{
+    display: grid;
+    height: 10rem;
+    background-color: var(--DarkViolet);
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 80%;
+}
+.boostSection h1{
+    color: white;
+    align-self: end;
+    justify-self: center;
+    font-family: "poppinsBold";
+    text-align: center;
+    font-size:2.7rem;
+}
+.boostSection a{
+    border-radius:1.3rem;
+    font-family: "poppinsBold";
+    justify-self: center;
+    margin-top: 1rem;
+    height:2.5rem ;
+    padding: .5rem;
+    text-align: center;
+    width: 20%;
+    background-color: var(--Cyan);
+    color: white;
+}
+/*boost section end*/
+
+/*footer start*/
+footer{
+    display: grid;
+    justify-items:center;
+    grid-template-columns:10% 20% 20% 20% 30%;
+    background-color: var(--VeryDarkViolet);
+    height: 200px;
+}
+.flogo{
+    margin-top: 1rem;
+    height: 2rem;
+    width: 80%;
+    background-image: url('../images/flogo.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 95%;
+    justify-self:center;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+/*Features start*/
+.Features{
+    display: grid;
+    grid-template-rows: 20% 50%;
+    margin-top: 2.5rem;
+    justify-self:end;
+}
+.Features p{
+    color: white;
+    font-family: "poppinsBold";
+    justify-self:start;
+    align-self: start;
+    font-size: .8rem;
+}
+.Features ul{
+    display: grid;
+}
+.Features li{
+    font-size: .6rem;
+    justify-self:start;
+    list-style: none;
+}
+.Features a{
+    color: var(--Gray);
+}
+
+/*Resources start*/
+.Resources{
+    display: grid;
+    grid-template-rows: 20% 50%;
+    margin-top: 2.5rem;
+    justify-self:center;
+}
+.Resources p{
+    color: white;
+    font-family: "poppinsBold";
+    justify-self:start;
+    font-size: .8rem;
+}
+.Resources ul{
+    display: grid;
+}
+.Resources li{
+    font-size: .6rem;
+    justify-self:start;
+    list-style: none;
+}
+.Resources a{
+    color: var(--Gray);
+}
+/*compagny start*/
+.Company{
+    display: grid;
+    grid-template-rows: 20% 50%;
+    margin-top: 2.5rem;
+    justify-self:start;
+}
+.Company p{
+    color: white;
+    font-family: "poppinsBold";
+    justify-self: start;
+    font-size: .8rem;
+}
+.Company ul{
+    display: grid;
+}
+.Company li{
+    font-size: .6rem;
+    justify-self:start;
+    list-style: none;
+}
+.Company a{
+    color: var(--Gray);
+}
+/*social image start*/
+.socialIcon{
+    justify-self:start;
+    width: 60%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    transform: translate(-37%,0%);
+    margin-top: 2.5rem;
+}
+.facebook{
+    height: 100%;
+    background-image: url('../images/icon-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.twitter{
+    height: 100%;
+    background-image: url('../images/icon-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.pinterest{
+    height: 100%;
+    background-image: url('../images/icon-pinterest.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.instagram{
+    height: 100%;
+    background-image: url('../images/icon-instagram.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+/*footer end*/
+
+.ul1 a:hover,.ul1 a:focus{
+    color: black;
+}
+.Login a:focus,.Login a:hover{
+    color:black;
+}
+.SignUp:hover,.SignUp:focus{
+    background-color: hsl(180, 79%, 74%);
+}
+aside a:hover, aside a:focus{
+    background-color: hsl(180, 79%, 74%);
+}
+.shortBox button:hover,.shortBox button:focus{
+    background-color: hsl(180, 79%, 74%);
+    cursor: pointer;
+}
+.boostSection a:hover,.boostSection a:focus{
+    background-color: hsl(180, 79%, 74%);
+}
+.Features a:hover,.Features a:focus{
+    color: var(--Cyan);
+}
+.Resources a:hover,.Resources a:focus{
+    color: var(--Cyan);
+}
+.Company a:hover,.Company a:focus{
+    color: var(--Cyan);
+}
+.socialIcon{
+    justify-self:start;
+    width: 60%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    transform: translate(-37%,0%);
+    margin-top: 2.5rem;
+}
+.facebook:hover,.facebook:focus{
+    background-image: url('../images/social-icon-modif/icon-facebook.svg');
+}
+.twitter:hover,.twitter:focus{
+    background-image: url('../images/social-icon-modif/icon-twitter.svg');
+}
+.pinterest:hover,.pinterest:focus{
+    background-image: url('../images/social-icon-modif/icon-pinterest.svg');
+}
+.instagram:hover,.instagram:focus{
+    background-image: url('../images/social-icon-modif/icon-instagram.svg');
+}
+
+
+@media screen and (min-width:1108px) and (max-width:1238px) {
+    .FullyImage{
+        width: 19%;
+    }
+    .DetailedImage{
+        width: 19%;
+    }
+    .BrandImage{
+        width: 19%;
+    }
+}
+@media screen and (min-width:1238px) and (max-width:1242px) {
+    .FullyImage{
+        width: 17%;
+    }
+    .DetailedImage{
+        width: 17%;
+    }
+    .BrandImage{
+        width: 17%;
+    }
+}
+@media screen and (min-width:1242px) {
+    .FullyImage{
+        width: 15%;
+    }
+    .DetailedImage{
+        width: 15%;
+    }
+    .BrandImage{
+        width: 15%;
+    }
+}
+@media screen and (min-width:1120px) {
+    .borderlink2{
+        width:10rem;
+        margin-right: 26%;
+    }
+    .borderlink1{
+        width:10rem;
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:876px) {
+    .DetailedRecords{
+        margin-left: 3rem;
+    }
+    .FullyCustomizable{
+        left: 3rem;
+    }
+    aside h1{
+        width: 50%;
+    }
+    .borderlink2{
+        width:7rem;
+        margin-right: 25%;
+    }
+    .borderlink1{
+        width:7rem;
+        margin-left: 30%;
+    }
+    .FullyImage{
+        width: 26%;
+    }
+    .DetailedImage{
+        width: 26%;
+    }
+    .BrandImage{
+        width: 26%;
+    }
+    .shortlinks1,.shortlinks2,.shortlinks3{
+        position: absolute;
+
+    }
+}
+
+@media screen and (min-width:876px) and (max-width:1120px) {
+    .borderlink2{
+        width:7rem;
+        margin-right: 25%;
+    }
+    .borderlink1{
+        width:7rem;
+        margin-left: 30%;
+    }
+}
+

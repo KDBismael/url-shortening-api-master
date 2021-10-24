@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png"  sizes="32x32" href="../images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:376px) and (max-width:1440px)">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:376px)">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body> 
+  <header>
+    <nav>
+      <div class="logo">  </div>
+      <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><g fill="var(--Gray)" fill-rule="evenodd"><path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z"/></g></svg>
+      <div class="menuModal">
+        <div class="menu">
+          <ul class="ul1">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+          <div class="connexion">
+            <ul class="ul2">
+              <li class="Login"><a href="#Login">Login</a></li>
+              <li class="SignUp"><a href="#SignUp">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <aside>
+    <div class="workimage">
+
+    </div>
+    <h1>More than just shorter links</h1>
+    <p>Build your brand’s recognition and get detailed insights 
+      on how your links are performing.
+    </p>
+    <a class=" GetStarted" href="# GetStarted"> Get Started</a>
+  </aside>
+
+  <div class="shortBox">
+    <div id="monAncre" class="containBox">
+      <input id="linkToShort" type="text" placeholder="Shorten a link here...">
+      <p class="warning"></p>
+      <button class="short">Shorten It!</button>
+    </div>
+  </div>
+  <div class="containt">
+    <div  class="btnCopy1 btnCopy">
+      <p class="links1 links">links</p>
+      <p class="shortlinks1 shortlinks"> short links</p>
+      <button class="copy1">Copy</button>
+    </div>
+    <div class="btnCopy2  btnCopy">
+      <p class="links2 links">links</p>
+      <p class="shortlinks2 shortlinks">short links</p>
+      <button class="copy2">Copy</button>
+    </div>
+    <div class="btnCopy3  btnCopy">
+      <p class=" links links3">links</p>
+      <p class="shortlinks3 shortlinks">short links</p>
+      <button class="copy3">Copy</button>
+    </div>
+    <div class="myContaint">
+      <h1 class="containtT">Advanced Statistics</h1>
+      <p class="containtP">  Track how your links are performing across the web with our 
+        advanced statistics dashboard.
+      </p>
+      <div class="BrandRecognition">
+        <div class="BrandImage">
+        </div>
+       <h1>Brand Recognition</h1>
+        <p>Boost your brand recognition with each click. Generic links don’t 
+          mean a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+      <div class="borderlink1"></div>
+      <div class="DetailedRecords">
+        <div class="DetailedImage">
+        </div>
+        <h1>Detailed Records</h1>
+        <p>
+          Gain insights into who is clicking your links. Knowing when and where 
+          people engage with your content helps inform better decisions.
+        </p>
+      </div>
+      <div class="borderlink2"></div>
+      <div class="FullyCustomizable">
+        <div class="FullyImage"></div>
+        <h1>Fully Customizable</h1>
+        <p>Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="boostSection">
+    <h1>Boost your links today</h1>
+    <a href="#monAncre">Get Started</a>
+  </div>
+
+  <footer>
+    <div class="flogo">
+    </div>
+    <div class="Features">
+      <p>Features</p>
+      <ul>
+        <li><a href="#Link">Link Shortening</a></li>
+        <li><a href="#Branded">Branded Links</a></li>
+        <li><a href="#Analyrics">Analytics</a></li>
+      </ul>
+    </div> 
+    <div class="Resources">
+      <p>Resources</p>
+      <ul>
+        <li><a href="#Blog">Blog</a></li>
+        <li><a href="#Developers">Developers</a></li>
+        <li><a href="#Support">Support</a></li>
+      </ul>
+    </div>
+    <div class="Company">
+      <p>Company</p>
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Team">Our Team</a></li>
+        <li><a href="#areers">Careers</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="socialIcon">
+      <a class="facebook" href="#facebook"></a>
+      <a class="twitter" href="#twitter"></a>
+      <a class="pinterest" href="#pinterest"></a>
+      <a class="instagram" href="#instagram"></a>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">KDB</a>.
+  </div>
+  <!-- Querystring library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.7.0/qs.min.js"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+  <script src="./main.js"></script>
+</body>
+</html>
