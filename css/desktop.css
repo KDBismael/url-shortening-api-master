@@ -1,3 +1,6 @@
+body{
+    min-width: 783px;
+}
 /*navbar stated*/
 nav{
     display: grid;
@@ -786,6 +789,22 @@ aside a:hover, aside a:focus{
     .borderlink1{
         width:7rem;
         margin-left: 30%;
+    }
+}
+@media (min-width:876px) and (max-width:918px){
+    aside h1{
+        width: 60%;
+    }
+}
+@media (max-width:783px){
+    .BrandRecognition{
+        right: 1rem;
+    }
+    .FullyCustomizable{
+        left: 1rem;
+    }
+    aside h1{
+        width: 60%;
     }
 }
 

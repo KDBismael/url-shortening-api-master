@@ -106,6 +106,14 @@ menuModal.addEventListener('click',(e)=>{
 
         }
     }
+    // hidden warning if short input content change
+    links.addEventListener('change',hiddenW)
+
+    //function to hidden warning
+    function hiddenW(){
+        links.style.border="initial";
+        warning.innerHTML='';
+    }
 
 
 
