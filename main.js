@@ -62,17 +62,17 @@ menuModal.addEventListener('click',(e)=>{
         if(C==1){
             linkContainer[2].style.display="block"
             linkDisplay[2].innerHTML=originalL
-            shortLinksDisplay[2].innerHTML=short  
+            shortLinksDisplay[2].innerHTML= short  
         }
         else if(C==2){
             linkContainer[1].style.display="block"
             linkDisplay[1].innerHTML=originalL
-            shortLinksDisplay[1].innerHTML=short  
+            shortLinksDisplay[1].innerHTML= short  
         }
         else if(C==3){
             linkContainer[0].style.display="block"
             linkDisplay[0].innerHTML=originalL
-            shortLinksDisplay[0].innerHTML=short  
+            shortLinksDisplay[0].innerHTML= short  
         }
     }
 
@@ -94,15 +94,18 @@ menuModal.addEventListener('click',(e)=>{
                 }).then((response)=>{
                     var Result=JSON.parse(response.request.response);
                     data_short=Result.result.full_short_link;
-                    console.log(data_short);
+                    if(axios){
+                        i=i+1;
+                    }
+                    displayresponse(i,data,data_short); 
                 })
                 .catch((error)=>{
                     console.log(error);
                 });
-            if(axios){
-                i=i+1;
-            }
-           displayresponse(i,data,data_short); 
+            // if(axios){
+            //     i=i+1;
+            // }
+        //    displayresponse(i,data,data_short); 
 
         }
     }
@@ -113,6 +116,18 @@ menuModal.addEventListener('click',(e)=>{
     function hiddenW(){
         links.style.border="initial";
         warning.innerHTML='';
+    }
+
+    // copy element in papier press
+
+    //get copy button
+    var copied= document.getElementsByClassName('copied');
+
+    copied[2].addEventListener('click',Copied)
+
+    //function to copy
+    function Copied(){
+        copied[2].innerHTML="copied!"
     }
 
 

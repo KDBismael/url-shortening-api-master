@@ -356,9 +356,14 @@ aside a{
 }
 
 
+
+.copyContent{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
 .btnCopy1{
     height: 4rem;
-    width: 85%;
+    width: 100%;
     justify-self: center;
     background-color: white;
     margin-top: 1rem;
@@ -368,17 +373,18 @@ aside a{
 .links1{
     padding-left:1rem;
     padding-top: .6rem;
-    font-size: 1.3rem;
-    margin-top: .5rem;
+    font-size: 1rem;
+    margin-top: .9rem;
     display: inline-block;
 }
 .shortlinks1{
     padding-left:1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--Cyan);
     display: inline-block;
-    margin-left: 27rem;
-    margin-right: 1rem;
+    margin-left: 4rem;
+    margin-right: 6rem;
+    margin-bottom: .9rem;
 }
 .copy1{
     width: 15%;
@@ -396,8 +402,7 @@ aside a{
 }
 .btnCopy2{
     height: 4rem;
-    width: 85%;
-    justify-self: center;
+    width: 100%;
     background-color: white;
     margin-top: 1rem;
     border-radius: .5rem;
@@ -406,17 +411,18 @@ aside a{
 .links2{
     padding-left:1rem;
     padding-top: .6rem;
-    font-size: 1.3rem;
-    margin-top: .5rem;
+    font-size: 1rem;
+    margin-top: .9rem;
     display: inline-block;
 }
 .shortlinks2{
     padding-left:1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--Cyan);
     display: inline-block;
-    margin-left: 27rem;
-    margin-right: 1rem;
+    margin-left: 4rem;
+    margin-right: 6rem;
+    margin-bottom: .9rem;
 }
 .copy2{
     width: 15%;
@@ -434,7 +440,7 @@ aside a{
 }
 .btnCopy3{
     height: 4rem;
-    width: 85%;
+    width: 100%;
     justify-self: center;
     background-color: white;
     margin-top: 1rem;
@@ -444,17 +450,18 @@ aside a{
 .links3{
     padding-left:1rem;
     padding-top: .6rem;
-    font-size: 1.3rem;
-    margin-top: .5rem;
+    font-size: 1rem;
+    margin-top: .9rem;
     display: inline-block;
 }
 .shortlinks3{
     padding-left:1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--Cyan);
     display: inline-block;
-    margin-left: 27rem;
-    margin-right: 1rem;
+    margin-left: 4rem;
+    margin-right: 6rem;
+    margin-bottom: .9rem;
 }
 .copy3{
     width: 15%;

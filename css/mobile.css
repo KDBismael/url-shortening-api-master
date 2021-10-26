@@ -332,9 +332,14 @@ aside a{
     z-index: 1;
 }
 /* copy element start*/
+.copyContent{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+}
 .btnCopy1{
     height: 7rem;
-    width: 90%;
+    width: 100%;
     justify-self: center;
     background-color: white;
     margin-top: 1rem;
@@ -344,7 +349,7 @@ aside a{
     padding-left:.5rem;
     font-size: 70%;
     margin-top: .5rem;
-    margin-bottom: .5rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid hsl(0, 15%, 92%);
 }
 .shortlinks1{
@@ -368,7 +373,7 @@ aside a{
 
 .btnCopy2{
     height: 7rem;
-    width: 90%;
+    width: 100%;
     justify-self: center;
     background-color: white;
     margin-top: 1rem;
@@ -378,7 +383,7 @@ aside a{
     padding-left:.5rem;
     font-size: 70%;
     margin-top: .5rem;
-    margin-bottom: .5rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid hsl(0, 15%, 92%);
 }
 .shortlinks2{
@@ -402,7 +407,7 @@ aside a{
 
 .btnCopy3{
     height: 7rem;
-    width: 90%;
+    width: 100%;
     justify-self: center;
     background-color: white;
     margin-top: 1rem;
@@ -413,7 +418,7 @@ aside a{
     padding-left:.5rem;
     font-size: 70%;
     margin-top: .5rem;
-    margin-bottom: .5rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid hsl(0, 15%, 92%);
 }
 .shortlinks3{
